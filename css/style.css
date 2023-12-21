@@ -147,6 +147,7 @@ img {
   display: block;
   text-decoration: none;
   color: var(--text-color);
+  white-space: nowrap;
 }
 
 .sitenav-link:hover {
