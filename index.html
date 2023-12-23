@@ -1,61 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoffeeRoasters</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeRoasters</title>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="site-header-hero-wrapper">
+      <!-- SITE-HEADER -->
+      <header class="site-header">
+        <div class="site-header-container container">
+          <a class="site-header-logo-link" href="index.html">
+            <img
+              class="site-header-logo-img"
+              src="img/logo.svg"
+              alt="Coffeeroasters Logo"
+              width="235"
+              height="24"
+            />
+          </a>
 
-</head>
-<body>
+          <!-- SITENAV -->
+          <nav class="sitenav">
+            <ul class="sitenav-list">
+              <li class="sitenav-item">
+                <a class="sitenav-link" href="#">HOME</a>
+              </li>
 
-  <div class="site-header-hero-wrapper">
-    <!-- SITE-HEADER -->
-    <header class="site-header">
-      <div class="site-header-container container">
-        <a class="site-header-logo-link" href="index.html">
-          <img class="site-header-logo-img" src="img/logo.svg" alt="Coffeeroasters Logo" width="235" height="24">
-        </a>
+              <li class="sitenav-item">
+                <a class="sitenav-link" href="#">ABOUT US</a>
+              </li>
 
-        <!-- SITENAV -->
-        <nav class="sitenav">
-          <ul class="sitenav-list">
-            <li class="sitenav-item">
-              <a class="sitenav-link" href="#">HOME</a>
-            </li>
-
-            <li class="sitenav-item">
-              <a class="sitenav-link" href="#">ABOUT US</a>
-            </li>
-
-            <li class="sitenav-item">
-              <a class="sitenav-link" href="#">Create your plan</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <!-- HERO -->
-    <div class="hero">
-      <div class="hero-container container">
-        <div class="hero-info-wrapper">
-          <h1 class="hero-heading">Good coffee<br>
-            is made simply.</h1>
-            <p class="hero-text">Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
-            <a class="button button-green" href="#">Create your plan</a>
+              <li class="sitenav-item">
+                <a class="sitenav-link" href="#">Create your plan</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </header>
 
-        <img class="hero-img hero-img-index" src="img/index-hero-img.jpg" alt="coffee" width="710" height="696" srcset="img/index-hero-img.jpg 1x, img/index-hero-img@2x.jpg 2x">
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero-container container">
+          <div class="hero-info-wrapper">
+            <h1 class="hero-heading">
+              Good coffee<br />
+              is made simply.
+            </h1>
+            <p class="hero-text">
+              Start your mornings with the world’s best coffees. Try our
+              expertly curated artisan coffees from our best roasters delivered
+              directly to your door, at your schedule.
+            </p>
+            <a class="button button-green" href="#">Create your plan</a>
+          </div>
+
+          <img
+            class="hero-img hero-img-index"
+            src="img/index-hero-img.jpg"
+            alt="coffee"
+            width="710"
+            height="696"
+            srcset="img/index-hero-img.jpg 1x, img/index-hero-img@2x.jpg 2x"
+          />
+        </div>
       </div>
     </div>
 
-  </div>
+    <!-- MAIN-CONTENT -->
+    <main class="main-content">
+      <!-- INDEX-COLLECTION -->
+      <section class="index-collection">
+        <div class="container">
+          <div class="index-collection-inner">
+            <h2 class="index-collection-heading">Our collection</h2>
+            <ul class="index-collection-list">
+              <li class="index-collection-item">
+                <img
+                  class="index-collection-img"
+                  src="img/danche.png"
+                  alt="Our collection"
+                  width="450"
+                  height="375"
+                  srcset="img/danche.png 1x, img/danche@2x.png 2x"
+                />
+                <div class="index-collection-info">
+                  <h3 class="index-collection-title">Danche</h3>
+                  <p class="index-collection-text">
+                    Ethiopian hand-harvested blend densely packed with vibrant
+                    fruit notes.
+                  </p>
+                </div>
+              </li>
+              <li class="index-collection-item">
+                <img
+                  class="index-collection-img"
+                  src="img/gran expresso.png"
+                  alt="Danche"
+                  width="450"
+                  height="375"
+                  srcset="img/gran expresso.png 1x, img/gran expresso@2x.png 2x"
+                />
+                <div class="index-collection-info">
+                  <h3 class="index-collection-title">Gran Espresso</h3>
+                  <p class="index-collection-text">
+                    Light and flavorful blend with cocoa and black pepper for an
+                    intense experience.
+                  </p>
+                </div>
+              </li>
+              <li class="index-collection-item">
+                <img
+                  class="index-collection-img"
+                  src="img/picollo.png"
+                  alt="Gran Espresso"
+                  width="450"
+                  height="375"
+                  srcset="img/picollo.png 1x, img/picollo@2x.png 2x"
+                />
+                <div class="index-collection-info">
+                  <h3 class="index-collection-title">Piccollo</h3>
+                  <p class="index-collection-text">
+                    Mild and smooth blend featuring notes of toasted almond and
+                    dried cherry.
+                  </p>
+                </div>
+              </li>
+              <li class="index-collection-item">
+                <img
+                  class="index-collection-img"
+                  src="img/planalto.png"
+                  alt="Piccollo"
+                  width="450"
+                  height="375"
+                  srcset="img/planalto.png 1x, img/planalto@2x.png 2x"
+                />
+                <div class="index-collection-info">
+                  <h3 class="index-collection-title">Planalto</h3>
+                  <p class="index-collection-text">
+                    Brazilian dark roast with rich and velvety body, and hints
+                    of fruits and nuts.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
 
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
