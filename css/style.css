@@ -64,6 +64,7 @@ body {
   line-height: 1.75;
   background-color: #fff;
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 img {
@@ -243,7 +244,21 @@ img {
   margin-bottom: 34px;
 }
 
+.hero-img-wrapper {
+  position: relative;
+}
+
+.hero-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+}
+
 .hero-img {
+  display: block;
   width: 710px;
   height: 596px;
   object-fit: cover;
@@ -259,6 +274,7 @@ img {
 }
 
 .index-collection-inner {
+  position: relative;
   padding: 50px 143px;
   background-color: var(--light-bg);
   background-image: url("../img/index-collection-bg.jpg");
@@ -323,6 +339,25 @@ img {
 
 .index-collection-text:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.index-collection-leaves-left {
+  position: absolute;
+  top: 40px;
+  left: -160px;
+
+}
+
+.index-collection-leaves-right {
+  position: absolute;
+  top: 42%;
+  right: -26%;
+}
+
+.index-collection-leaves-left-light {
+  position: absolute;
+  bottom: 10%;
+  left: -12%;
 }
 
 /* INDEX-FEATURES */
@@ -399,10 +434,17 @@ img {
 
 /* HOW-IT-WORKS */
 .how-it-works-inner {
+  position: relative;
   padding: 50px 30px;
   background-color: var(--accent-color-green);
   background-image: url("../img/green-bg.jpg");
   margin-bottom: 50px;
+}
+
+.how-it-works-inner-sticker {
+  position: absolute;
+  right: 68px;
+  top: 41px;
 }
 
 .how-it-works-heading {
@@ -427,6 +469,7 @@ img {
 }
 
 .how-it-works-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: calc(100% / 3 - 20px);
@@ -435,6 +478,8 @@ img {
 }
 
 .how-it-works-item::before {
+  position: relative;
+  z-index: 2;
   width: 60px;
   height: 60px;
   margin-bottom: 20px;
@@ -442,6 +487,18 @@ img {
   border: 4px solid var(--accent-color-light-brown);
   content: "";
 }
+
+.how-it-works-item:not(:last-child)::after {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  content: "";
+  height: 3px;
+  width: 433px;
+  background-image: url("../img/brown-dashed-stoke.svg");
+  background-repeat: no-repeat;
+}
+
 
 .how-it-works-info {
   display: flex;
